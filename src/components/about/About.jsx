@@ -13,6 +13,7 @@ const About = () => {
             variants={fadeIn('right', '0.3')}
             initial='hidden'
             whileInView={'show'}
+            viewport={{once: true, amount: 0.7}} 
             className='w-full md:w-[380px] lg:w-[500px] text-center'
           >
             <img 
@@ -27,6 +28,7 @@ const About = () => {
             variants={fadeIn('left', '0.5')}
             initial='hidden'
             whileInView={'show'}
+            viewport={{once: true, amount: 0.7}} 
             className='text-white'
           >
             <h2 className='mb-3 text-[22px] md:text-[30px] lg:text-[40px] uppercase font-secondary font-semibold'>About <span className='text-primary'>Us</span></h2>

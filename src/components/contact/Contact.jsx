@@ -13,6 +13,7 @@ const Contact = () => {
                   variants={fadeIn('right', 0.3)}
                   initial='hidden'
                   whileInView={'show'}
+                  viewport={{once: true, amount: 0.7}} 
                   className='mb-3 text-[22px] md:text-[30px] lg:text-[40px] uppercase font-secondary font-semibold'
                 >
                   Get In <span className='text-primary'>Touch</span>
@@ -21,6 +22,7 @@ const Contact = () => {
                   variants={fadeIn('right', 0.5)}
                   initial='hidden'
                   whileInView={'show'}
+                  viewport={{once: true, amount: 0.7}} 
                   className='mb-4 text-[17px] md:text-[20px] lg:text-[22px] font-medium font-secondary'
                 >
                   Let's Work together!
@@ -32,6 +34,7 @@ const Contact = () => {
                 variants={fadeIn('left', 0.3)}
                 initial='hidden'
                 whileInView={'show'}
+                viewport={{once: true, amount: 0.7}} 
               >
                 <form 
                   action=""

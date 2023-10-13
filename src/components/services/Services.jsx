@@ -20,6 +20,7 @@ const Services = () => {
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
+              viewport={{once: true, amount: 0.7}} 
               className='mb-3 text-[22px] md:text-[30px] lg:text-[40px] uppercase font-secondary font-semibold'
             >
               Our <span className='text-primary'>Services</span>
@@ -28,6 +29,7 @@ const Services = () => {
               variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
+              viewport={{once: true, amount: 0.7}} 
               className='mb-4 text-[17px] md:text-[20px] lg:text-[22px] font-medium font-secondary'
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -41,6 +43,7 @@ const Services = () => {
               variants={fadeIn('right', 1.2)}
               initial='hidden'
               whileInView={'show'}
+              viewport={{once: true, amount: 0.7}} 
               className='p-5 py-10 lg:w-[360px] bg-[#18181b] rounded-lg flex gap-6 border-t-2 border-t-red-500'
             >
               <img src={Image1} alt="" className='w-[40px] h-[40px]' />
@@ -56,6 +59,7 @@ const Services = () => {
               variants={fadeIn('up', 0.7)}
               initial='hidden'
               whileInView={'show'}
+              viewport={{once: true, amount: 0.7}} 
               className='flex flex-col gap-7'
             >
 
@@ -85,6 +89,7 @@ const Services = () => {
               variants={fadeIn('left', 1.2)}
               initial='hidden'
               whileInView={'show'}
+              viewport={{once: true, amount: 0.7}} 
               className='p-5 py-10 lg:w-[360px] bg-[#18181b] rounded-lg flex gap-6 border-t-2 border-t-pink-500'
             >
               <img src={Image4} alt="" className='w-[40px] h-[40px]' />
