@@ -5,7 +5,7 @@ import { SlSocialVkontakte } from 'react-icons/sl'
 const icons = [
   {
     id: 1,
-    url: '',
+    url: 'https://t.me/gilmanovdin',
     icon: <BsTelegram size={25} />
   },
   {
@@ -15,7 +15,7 @@ const icons = [
   },
   {
     id: 3,
-    url: '',
+    url: 'https://api.whatsapp.com/send/?phone=%2B79093529290&text&type=phone_number&app_absent=0',
     icon: <AiOutlineWhatsApp size={25} />
   },
   {
@@ -23,7 +23,7 @@ const icons = [
     url: 'https://vk.com/id635977761',
     icon: <SlSocialVkontakte size={25} />
   }
-]
+];
 
 const Footer = () => {
 
