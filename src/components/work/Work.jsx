@@ -54,7 +54,7 @@ const Work = () => {
                   />
 
                   {/* overlay */}
-                  <div className='group-hover:bg-black/70 h-full w-full absolute top-0 left-0 right-0 z-40 duration-300'></div>
+                  <div className='group-hover:bg-black/70 h-full w-full absolute top-0 left-0 right-0 z-30 duration-300'></div>
                     
                     <div className='absolute -bottom-full group-hover:bottom-6  flex justify-between gap-6 items-center mt-6 z-50 duration-1000 px-8'>
                     <div className=''>
