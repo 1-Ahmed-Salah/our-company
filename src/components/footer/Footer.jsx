@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <div className="bg-[#18181b] max-w-full py-6">
         <div className="container">
-            <div className="flex flex-col text-center gap-y-5 lg:flex-row justify-between text-white">
+            <div className="flex flex-col text-center gap-y-6 lg:flex-row justify-between text-white">
                 <div className='flex items-center justify-center gap-4'>
                 {
                   icons.map(icon => (
