@@ -16,7 +16,7 @@ const Work = () => {
               variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{once: true, amount: 0.7}} 
+              viewport={{once: true, amount: 0.3}} 
               className='mb-3 text-[22px] md:text-[30px] lg:text-[40px] uppercase font-secondary font-semibold'
             >
               Our <span className='text-primary'>Work</span>
@@ -25,7 +25,7 @@ const Work = () => {
               variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{once: true, amount: 0.7}} 
+              viewport={{once: true, amount: 0.5}} 
               className='mb-4 text-[17px] md:text-[20px] lg:text-[22px] font-medium font-secondary'
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -34,17 +34,17 @@ const Work = () => {
 
           {/* work */}
           <motion.div 
-            variants={fadeIn('up', 0.8)}
+            variants={fadeIn('up', 0.5)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: true, amount: 0.7}} 
-            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 '
+            className='grid grid-cols-1 gap-y-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-4 max-w-full  '
           >
             {
               works.map(work => (
                 <div 
                   key={work.id}
-                  className='bg-[#18181b] rounded-xl overflow-hidden relative group '
+                  className='bg-[#18181b] rounded-xl overflow-hidden relative group w-full '
                 >
                   
 
