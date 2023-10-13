@@ -4,7 +4,6 @@ import { fadeIn } from '../../variants.js';
 import { CiLocationArrow1 } from 'react-icons/ci'
 
 const Work = () => {
-
   return (
     <div className='section' name='work'>
       <div className="container">
@@ -37,14 +36,14 @@ const Work = () => {
             variants={fadeIn('up', 0.5)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: true, amount: 0.7}} 
-            className='grid grid-cols-1 gap-y-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-4 max-w-full  '
+            viewport={{once: true, amount: 0.3}} 
+            className='grid grid-cols-1 gap-y-6 lg:gap-x-6 lg:grid-cols-3 xl:grid-cols-4 '
           >
             {
               works.map(work => (
                 <div 
                   key={work.id}
-                  className='bg-[#18181b] rounded-xl overflow-hidden relative group w-full '
+                  className='bg-[#18181b] rounded-xl overflow-y-hidden relative group w-full '
                 >
                   
 
