@@ -3,10 +3,34 @@ import { fadeIn } from '../../variants';
 import { Button } from 'react-scroll';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { BsTelegram } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai'
-import { SlSocialVkontakte } from 'react-icons/sl'
+import { AiFillGithub, AiOutlineWhatsApp } from 'react-icons/ai';
+import { SlSocialVkontakte } from 'react-icons/sl';
+
+const icons = [
+  {
+    id: 1,
+    url: '',
+    icon: <BsTelegram size={25} />
+  },
+  {
+    id: 2,
+    url: 'https://github.com/1-Ahmed-Salah',
+    icon: <AiFillGithub size={25} />
+  },
+  {
+    id: 3,
+    url: '',
+    icon: <AiOutlineWhatsApp size={25} />
+  },
+  {
+    id: 4,
+    url: 'https://vk.com/id635977761',
+    icon: <SlSocialVkontakte size={25} />
+  }
+];
 
 const Banner = () => {
+
   return (
     <div className='min-h-[100vh] flex items-center' name='home'>
       <div className="container">
@@ -60,25 +84,18 @@ const Banner = () => {
                 viewport={{once: true, amount: 0.7}} 
               >
                 <div className='flex items-center gap-4'>
-                  <a
-                    href='#'
-                    target='_blank'
-                  >
-                    <BsTelegram size={23} color='#fff' />
-                  </a>
-                  <a
-                    href='#'
-                    target='_blank'
-                  >
-                    <AiFillGithub size={23} color='#fff' />
-                  </a>
-
-                  <a 
-                    href="#"
-                    target='_blank'
-                  >
-                    <SlSocialVkontakte size={23} color='#fff' />
-                </a>
+                  {
+                    icons.map(icon => (
+                      <a
+                        key={icon.id}
+                        href={icon.url}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        {icon.icon}
+                      </a>
+                    ))
+                  } 
                 </div>
               </motion.div>
 
@@ -104,7 +121,7 @@ const Banner = () => {
             variants={fadeIn('up', 1.5)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: true, amount: 0.7}} 
+            viewport={{once: true}} 
             className='absolute bottom-10'
           >
             <Button 

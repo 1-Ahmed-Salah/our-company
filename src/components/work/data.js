@@ -40,6 +40,6 @@ export const works = [
         img: 'admin-ui.png',
         title: 'Admin UI',
         url: 'https://admin-ui-zeta.vercel.app/',
-        teq: 'React JS - Tailwind CSS - MUI - Recharts'
+        teq: 'React JS - SASS - MUI - Recharts'
     },
 ];
