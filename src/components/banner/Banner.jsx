@@ -39,7 +39,7 @@ const Banner = () => {
           {/* text */}
           <div className='text-white'>
             <motion.h1 
-              variants={fadeIn('up', 0.4)}
+              variants={fadeIn('up', 0.3)}
               initial='hidden'
               whileInView={'show'}
               viewport={{once: true, amount: 0.7}} 
@@ -49,7 +49,7 @@ const Banner = () => {
             </motion.h1>
             
             <motion.p 
-              variants={fadeIn('up', 0.8)}
+              variants={fadeIn('up', 0.5)}
               initial='hidden'
               whileInView={'show'}
               viewport={{once: true, amount: 0.7}} 
@@ -60,7 +60,7 @@ const Banner = () => {
 
             <div className='flex items-center gap-8'>
               <motion.div
-                variants={fadeIn('up', 1.2)}
+                variants={fadeIn('up', 0.8)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once: true, amount: 0.7}} 
@@ -78,7 +78,7 @@ const Banner = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn('up', 1.2)}
+                variants={fadeIn('up', 0.8)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once: true, amount: 0.7}} 
@@ -104,7 +104,7 @@ const Banner = () => {
 
           {/* image */}
           <motion.div
-            variants={fadeIn('down', 1.2)}
+            variants={fadeIn('down', 0.8)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: true, amount: 0.7}} 
@@ -118,7 +118,7 @@ const Banner = () => {
           </motion.div>
           
           <motion.div
-            variants={fadeIn('up', 1.5)}
+            variants={fadeIn('up', 1.2)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: true}} 

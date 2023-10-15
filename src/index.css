@@ -46,6 +46,6 @@ body {
   }
 
   .section {
-    @apply py-8 lg:py-24 min-h-screen flex items-center overflow-x-hidden;
+    @apply py-8 lg:py-24 min-h-screen flex items-center  justify-center overflow-x-hidden;
   }
 }
